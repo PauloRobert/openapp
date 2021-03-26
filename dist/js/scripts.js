@@ -20,3 +20,26 @@
         $("body").toggleClass("sb-sidenav-toggled");
     });
 })(jQuery);
+
+
+
+jQuery(function(){    
+    setInterval(function(){ //Calls a function every X ms as specified in param 2
+        var _nbr = parseInt(jQuery('#contagem_visualizacoes').text());//Get number from element as int
+        jQuery('#contagem_visualizacoes').text(++_nbr);//Increment variable and puts it in the element
+    },500);//Number of ms between function calls
+});
+
+jQuery(function(){    
+    setInterval(function(){ //Calls a function every X ms as specified in param 2
+        var _nbr = parseInt(jQuery('#contagem_clique_ofertas').text());//Get number from element as int
+        jQuery('#contagem_clique_ofertas').text(++_nbr);//Increment variable and puts it in the element
+    },500);//Number of ms between function calls
+});
+
+jQuery(function(){    
+    setInterval(function(){ //Calls a function every X ms as specified in param 2
+        var _nbr = parseInt(jQuery('#contagem_visualizou_semclique_ofertas').text());//Get number from element as int
+        jQuery('#contagem_visualizou_semclique_ofertas').text(++_nbr);//Increment variable and puts it in the element
+    },500);//Number of ms between function calls
+});
