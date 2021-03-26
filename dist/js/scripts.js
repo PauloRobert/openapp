@@ -43,3 +43,23 @@ jQuery(function(){
         jQuery('#contagem_visualizou_semclique_ofertas').text(++_nbr);//Increment variable and puts it in the element
     },500);//Number of ms between function calls
 });
+
+
+//Delete linhas
+
+$(document).ready(function() {
+    $("#dataTable .deleteLink").on("click",function() {
+        var td = $(this).parent();
+        var tr = td.parent();
+        //change the background color to red before removing
+        tr.css("background-color","#FF3700");
+
+        tr.fadeOut(400, function(){
+            tr.remove();
+        });
+    });
+});
+
+$(".delete").live('click', function(event) {
+    $(this).parent().parent().remove();
+});

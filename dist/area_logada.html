@@ -18,7 +18,7 @@
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">Open App</a>
-        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
+        <button class="btn btn-primary btn-sm btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
                 class="fas fa-bars"></i></button>
         <!-- Navbar Search-->
         <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
@@ -26,7 +26,7 @@
                 <input class="form-control" type="text" placeholder="Procurar" aria-label="Search"
                     aria-describedby="basic-addon2" />
                 <div class="input-group-append">
-                    <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                    <button class="btn btn-primary btn-sm btn-primary" type="button"><i class="fas fa-search"></i></button>
                 </div>
             </div>
         </form>
@@ -191,9 +191,10 @@
                                             <th>ID</th>
                                             <th>Nome </th>
                                             <th>Desconto</th>
-                                            <th>Cliques</th>
+                                            <th>Cliques diários</th>
                                             <th>Cadastrado em:</th>
-                                            <th>Salary</th>
+                           
+                                            <th>Ativo / inativo</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -201,9 +202,10 @@
                                             <th>ID</th>
                                             <th>Nome </th>
                                             <th>Desconto</th>
-                                            <th>Cliques</th>
+                                            <th>Cliques diários</th>
                                             <th>Cadastrado em:</th>
-                                            <th>Salary</th>
+                                          
+                                            <th>Ativo / inativo</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -212,64 +214,83 @@
                                             <td>Promo 10%</td>
                                             <td>10%</td>
                                             <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
+                                            <td>10/11/2020</td>
+                                          
+                                            <td><button type="button" class="btn btn-primary btn-sm btn-danger deleteLink">Inativar</button>
+                                            </td>
+
+
                                         </tr>
                                         <tr>
                                             <td>2</td>
                                             <td>Promo dia dos Pais 13%</td>
                                             <td>13%</td>
                                             <td>30</td>
-                                            <td>2011/09/03</td>
-                                            <td>$345,000</td>
+                                            <td>29/07/2020</td>
+                                         
+                                            <td><button type="button" class="btn btn-primary btn-sm btn-danger deleteLink">Inativar</button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>Promo Dia das Mulheres 17%</td>
                                             <td>17%</td>
                                             <td>40</td>
-                                            <td>2009/06/25</td>
-                                            <td>$675,000</td>
+                                            <td>02/03/2021</td>
+                                        
+                                            <td><button type="button" class="btn btn-primary btn-sm btn-danger deleteLink">Inativar</button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
                                             <td>Promo Natal 25%</td>
                                             <td>25%</td>
                                             <td>21</td>
-                                            <td>2011/12/12</td>
-                                            <td>$106,450</td>
+                                            <td>21/12/2020</td>
+                                          
+                                            <td><button type="button" class="btn btn-primary btn-sm btn-danger deleteLink">Inativar</button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
                                             <td>Promo Vem com nóis 20%</td>
                                             <td>20%</td>
                                             <td>23</td>
-                                            <td>2010/09/20</td>
-                                            <td>$85,600</td>
+                                            <td>23/04/2021</td>
+                                         
+                                            <td><button type="button" class="btn btn-primary btn-sm btn-danger deleteLink">Inativar</button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
                                             <td>Promo Cliente Fiel 28%</td>
                                             <td>28%</td>
                                             <td>47</td>
-                                            <td>2009/10/09</td>
-                                            <td>$1,200,000</td>
+                                            <td>17/05/2021</td>
+                                         
+                                            <td><button type="button" class="btn btn-primary btn-sm btn-danger deleteLink">Inativar</button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>7</td>
                                             <td>Promo Covid Zero 30%</td>
                                             <td>30%</td>
                                             <td>42</td>
-                                            <td>2010/12/22</td>
-                                            <td>$92,575</td>
+                                            <td>10/06/2021</td>
+                                        
+                                            <td><button type="button" class="btn btn-primary btn-sm btn-danger deleteLink">Inativar</button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>8</td>
                                             <td>Promo Frete Grátis</td>
                                             <td>Frete Grátis</td>
                                             <td>28</td>
-                                            <td>2010/11/14</td>
-                                            <td>$357,650</td>
+                                            <td>04/02/2021</td>
+                                       
+                                            <td><button type="button" class="btn btn-primary btn-sm btn-primary btn-sm btn-danger deleteLink">Inativar</button>
+                                            </td>
+
                                         </tr>
                                     </tbody>
                                 </table>
