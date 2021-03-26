@@ -43,5 +43,3 @@ jQuery(function(){
         jQuery('#contagem_visualizou_semclique_ofertas').text(++_nbr);//Increment variable and puts it in the element
     },500);//Number of ms between function calls
 });
-
-$('.alert').alert()
