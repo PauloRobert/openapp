@@ -60,6 +60,18 @@ $(document).ready(function() {
     });
 });
 
-$(".delete").live('click', function(event) {
-    $(this).parent().parent().remove();
-});
+
+//Cadastrar novas ofertas
+
+$(document).ready(function(){
+    $(".add").click(function(){
+        var idoferta = $("#idoferta").val();
+        var nomeoferta = $("#nomeoferta").val();
+        var descontooferta = $("#descontooferta").val();
+        var ativodesde = $("#ativodesde").val();
+        var markup = "<tr><td>" + idoferta + "</td><td>" + nomeoferta + "</td><td>" + descontooferta +"%"+  "</td><td></td><td>" + ativodesde + "</td><td></td></tr>";
+        $("#dataTable").append(markup);
+    });
+
+
+});  
