@@ -1,6 +1,6 @@
 $(function(){
 	$(".typed").typed({
-		strings: ["Seja Open.", "Seja Mais.", "Seja Tudo."],
+		strings: ["Seja PoupApp.", "Seja Mais.", "Seja Tudo."],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 		stringsElement: null,
 		// typing speed
