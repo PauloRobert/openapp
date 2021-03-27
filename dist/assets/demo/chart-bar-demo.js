@@ -9,7 +9,7 @@ var myLineChart = new Chart(ctx, {
   data: {
     labels: ["Dez 2020", "Jan 2021", "Fev 2021", "Mar 2021", "Abr 2021", "Mai 2021", "Jun 2021"],
     datasets: [{
-      label: "Revenue",
+      label: "Sessões",
       backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
       data: [4215, 5312, 6251, 7841, 9821, 14984, 17507],
@@ -22,7 +22,7 @@ var myLineChart = new Chart(ctx, {
           unit: 'month'
         },
         gridLines: {
-          display: false
+          display: true
         },
         ticks: {
           maxTicksLimit: 7

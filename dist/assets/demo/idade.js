@@ -3,13 +3,13 @@ Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSyste
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
 // Pie Chart Example
-var ctx = document.getElementById("myPieChart");
+var ctx = document.getElementById("idade");
 var myPieChart = new Chart(ctx, {
-  type: 'doughnut',
+  type: 'pie',
   data: {
-    labels: ["Homem", "Mulher", "Não declarado", "Prefere não responder"],
+    labels: ["18 - 30", "31 - 35", "36 - 40", "acima de 40"],
     datasets: [{
-      data: [970, 896, 232, 89],
+      data: [37, 896, 232, 89],
       backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745'],
       
     }],
@@ -21,5 +21,6 @@ var myPieChart = new Chart(ctx, {
           animateScale: true
 
         }
-    }
+    },
+    
 });
